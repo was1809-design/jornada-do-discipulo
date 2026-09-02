@@ -1,6 +1,6 @@
 # Jornada do Discípulo
 
-Jogo educativo infantil em HTML, CSS e JavaScript sobre princípios do evangelho de Jesus Cristo.
+Jogo de exploração infantil em HTML, CSS e JavaScript sobre bondade e discipulado cristão.
 
 ## Como jogar
 
@@ -8,6 +8,7 @@ Abra o jogo pelo GitHub Pages. O progresso é salvo automaticamente no aparelho.
 
 ## Missões
 
-- Vila da Bondade: escolhas dentro de uma história.
-- Rio dos Convênios: organização dos princípios e ordenanças do evangelho.
-- Biblioteca das Escrituras: caça a objetos ligados às histórias das escrituras.
+- Mapa livre com personagem controlável.
+- Três moradores com missões de ajuda.
+- Coleta de objetos, inventário, luzes e portal desbloqueável.
+- Controles por teclado e direcional virtual para celular.
