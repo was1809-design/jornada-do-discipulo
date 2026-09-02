@@ -1,18 +1,1 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#133652">
-  <meta name="description" content="Uma aventura educativa de fé para crianças.">
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.svg">
-  <link rel="stylesheet" href="style.css">
-  <title>Jornada do Discípulo</title>
-</head>
-<body>
-  <main id="app" aria-live="polite"></main>
-  <script src="app.js" defer></script>
-</body>
-</html>
+<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#133652"><meta name="description" content="Explore a Vila da Bondade e pratique boas ações."><link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon.svg"><link rel="stylesheet" href="style.css"><title>Jornada do Discípulo</title></head><body><main id="app"><section id="start" class="start"><div class="start-card"><div class="logo">⭐</div><p class="overline">JORNADA DO DISCÍPULO</p><h1>Vila da<br><span>Bondade</span></h1><p>Explore a vila, converse com os moradores e use suas ações para iluminar o mundo.</p><label>Nome do aventureiro<input id="player-name" maxlength="16" value="Ian"></label><button id="play">Entrar na vila →</button><small>Use as setas ou WASD. No celular, use o direcional.</small></div></section><section id="game" hidden><canvas id="world" width="960" height="600" aria-label="Mapa jogável da Vila da Bondade"></canvas><div class="hud"><div class="player-pill"><span>🧒🏽</span><strong id="name-hud">Ian</strong></div><div class="light-pill">✨ <strong id="lights">0</strong></div></div><div id="quest" class="quest"></div><div id="dialogue" class="dialogue" hidden></div><div id="toast" class="toast" hidden></div><div id="joystick" class="joystick" aria-label="Direcional"><button data-dir="up">▲</button><button data-dir="left">◀</button><i></i><button data-dir="right">▶</button><button data-dir="down">▼</button></div><button id="action" class="action">AÇÃO</button></section></main><script src="app.js"></script></body></html>
