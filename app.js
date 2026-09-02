@@ -1,6 +1,7 @@
 const canvas=document.querySelector('#world'),ctx=canvas.getContext('2d'),startEl=document.querySelector('#start'),gameEl=document.querySelector('#game'),dialogue=document.querySelector('#dialogue'),toast=document.querySelector('#toast');
 const W=1600,H=1000,KEY='jornada-vila-v3';let running=false,last=0,keys={},near=null,dialogOpen=false;
-let saveData={name:'Ian',lights:0,missions:{bola:0,compras:0,lixo:0},inventory:[],x:790,y:720,...JSON.parse(localStorage.getItem(KEY)||'{}')};
+let stored={};try{stored=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(error){localStorage.removeItem(KEY)}
+let saveData={name:'Ian',lights:0,inventory:[],x:790,y:720,...stored,missions:{bola:0,compras:0,lixo:0,...(stored.missions||{})}};
 const player={x:saveData.x||790,y:saveData.y||720,r:22,speed:220,dir:'down'},camera={x:0,y:0};
 const solids=[{x:80,y:90,w:280,h:210},{x:610,y:70,w:330,h:230},{x:1190,y:100,w:300,h:220},{x:80,y:650,w:300,h:240},{x:1190,y:670,w:300,h:220},{x:720,y:420,w:170,h:105}];
 const trees=[[430,120],[490,200],[1050,130],[1090,240],[450,790],[530,860],[1040,790],[1110,880],[150,480],[1450,500],[1010,470],[560,470],[370,390],[1250,410]];
