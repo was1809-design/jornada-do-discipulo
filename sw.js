@@ -1,4 +1,4 @@
-const CACHE="jornada-v5";
+const CACHE="jornada-v6";
 const FILES=["./","index.html","style.css?v=5","hotfix.css?v=5","app.js?v=5","manifest.json","icon.svg"];
 self.addEventListener("install",event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)))});
 self.addEventListener("activate",event=>{event.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key))))]))});
