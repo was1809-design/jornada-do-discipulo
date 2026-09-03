@@ -1,1 +1,4 @@
 [hidden]{display:none!important}
+#game,#game *{-webkit-user-select:none!important;user-select:none!important;-webkit-touch-callout:none!important;-webkit-tap-highlight-color:transparent!important}
+#game,.joystick,.joystick button,.action{touch-action:none!important}
+.joystick button,.action{-webkit-appearance:none;appearance:none;cursor:pointer}
